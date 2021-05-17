@@ -1,0 +1,206 @@
+h1 {
+     color: #EA526F;
+     text-decoration: overline;
+     margin-bottom: 30px;
+}
+
+h2 {
+     text-decoration: underline;
+     text-decoration-color: #EA526F;
+     margin-bottom: 30px;
+}
+
+.contenido-central-prod {
+     width: auto;
+     margin-left: 200px;
+}
+
+.menu-lateral {
+     position: fixed;
+     top: 30%;
+     left: -4px;
+     width: 180px;
+     height: auto;
+     background-color: #f9f9f9;
+     box-shadow: 1px 1px 4px lightgrey;
+     border: 1px solid #FCEADE;
+     border-radius: 4px;
+}
+
+.menu-lateral p {
+     padding: 15px 0 15px 20px;
+     color: black;
+}
+
+.menu-lateral a {
+     position: relative;
+     left: 0;
+     transition: left 0.5s;
+}
+
+.menu-lateral a:hover {
+     left: 3px;
+     transition: left 0.5s;
+}
+
+.menu-lateral hr {
+     border-color: #EA526F;
+     width: 50%;
+     margin: 0 auto;
+}
+
+.producto-titulo {
+     width: 100%;
+     text-align: center;
+     margin-top: 60px;
+     margin-bottom: 100px;
+}
+
+.producto-secciones {
+     width: 90%;
+     margin: 0 auto 0 auto;
+     padding: 3px;
+     display: flex;
+     justify-content: space-evenly;
+     background-color: #FCEADE;
+}
+
+.producto-secciones a {
+     font-size: 20px;
+     color: black;
+}
+
+.producto-bloque {
+     margin-bottom: 80px;
+     margin-right: 5%;
+}
+
+.contenedor-productos {
+     padding-left: 20px;
+     width: auto;
+     display: flex;
+}
+
+.contenedor-productos img {
+     margin-right: 2%;
+     margin-bottom: 30px;
+     width: 24%;
+     border-radius: 200px;
+     box-shadow: 0 1px 2px grey;
+}
+
+.contenedor-productos img:hover {
+     box-shadow: 0 2px 7px black;
+}
+
+/*IMAGENES MODAL*/
+.ImgThumbnail {
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 100px;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalImage {
+     margin: auto;
+     display: block;
+     width: 40%;
+     height: auto;
+     max-width: 700px;
+}
+
+#caption {
+     margin: auto;
+     display: block;
+     width: 80%;
+     max-width: 700px;
+     text-align: center;
+     color: #ccc;
+     padding: 10px 0;
+     height: 150px;
+}
+
+.close {
+     position: absolute;
+     top: 15px;
+     right: 35px;
+     color: #f1f1f1;
+     font-size: 40px;
+     font-weight: bold;
+     transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+     color: rgb(255, 0, 0);
+     cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+     .modalImage {
+          width: 100%;
+     }
+}
+
+/*DOLLYYYYYYYYYYYYY*/
+.contenedorDolly {
+     width: 900px;
+     height: 600px;
+     background: #000;
+     overflow: hidden;
+     position: relative;
+}
+
+.backgroundDolly {
+     position: absolute;
+     top:50%;
+     left:50%;
+     width: 130%;
+     height: auto;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     -webkit-transform-origin: top left;
+     -ms-transform-origin: top left;
+     transform-origin: top left;
+     -webkit-transition: -webkit-transform 1.5s;
+     transition: transform 1.5s;
+}
+
+.frenteDolly {
+     position: absolute;
+     top: 5%;
+     left: 11%;
+     z-index: 1;
+
+     -webkit-transform: scale(0.8);
+     -ms-transform: scale(0.8);
+     transform: scale(0.8);
+     -webkit-transition: -webkit-transform 1s;
+     transition: transform 1s;
+}
+
+.contenedorDolly:hover .backgroundDolly {
+     -webkit-transform: scale(0.9) translate(-50%, -50%);
+     -ms-transform: scale(0.9) translate(-50%, -50%);
+     transform: scale(0.9) translate(-50%, -50%);
+}
+
+.contenedorDolly:hover .frenteDolly {
+     -webkit-transform: scale(1.4);
+     -ms-transform: scale(1.4);
+     transform: scale(1.4);
+}

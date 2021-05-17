@@ -1,0 +1,55 @@
+.separador-marca {
+     display:none;
+     border-top: 2px dotted #EA526F;
+     width: 50%;
+     margin: 100px auto 50px auto;
+}
+.contenido-central{
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+}
+.contenedor-marcas {
+     display: flex;
+     margin-bottom: 100px;
+     object-fit: fill;
+}
+
+.contenedor-marcas-2 {
+     display: flex;
+     text-align: right;
+     margin-bottom: 100px;
+
+}
+
+.h6{
+     text-decoration:underline;
+     text-decoration-color: #EA526F;
+     font-size: 30px;
+     font-weight: bold;
+}
+
+.marcaImg, .marcaImg-2 {
+     width: 50%;
+
+
+}
+
+.marcaImg img, .marcaImg-2 img {
+     width: 100%;
+     min-width: 290px;
+     height:100%;
+
+}
+
+.marcaInfo{
+     padding-left: 40px;
+     width:50%;
+     border-bottom: 2px solid #EA526F;
+
+}
+
+.marcaInfo-2{
+     width:50%;
+     padding-right: 40px;
+     border-bottom: 2px solid #EA526F;
+}

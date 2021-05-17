@@ -1,0 +1,34 @@
+.nosotros {
+     display: flex;
+
+}
+
+.contenido-central {
+     padding:10% 0 10% 0!important;
+}
+
+.nosotrosImg {
+     width: 40%;
+     height:400px;
+     overflow-y: hidden;
+
+}
+
+.nosotrosImg img {
+     width: 100%;
+     border-radius: 200px;
+     object-fit:fill;
+}
+
+.nosotrosInfo {
+     width: 60%;
+
+}
+.nosotrosInfo p{
+     top:50%;
+}
+
+h1, h3 {
+     text-decoration: underline;
+     text-decoration-color: #EA526F;
+}
