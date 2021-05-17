@@ -148,6 +148,11 @@ h2 {
      color: rgb(255, 0, 0);
      cursor: pointer;
 }
+@media only screen and (max-width: 900px) {
+     .contenedorDolly{
+          display:hidden;
+     }
+}
 
 @media only screen and (max-width: 700px) {
      .modalImage {
@@ -202,10 +207,4 @@ h2 {
      -webkit-transform: scale(1.4);
      -ms-transform: scale(1.4);
      transform: scale(1.4);
-}
-
-@media only screen and (max-width: 900px) {
-     .contenedorDolly{
-          display:hidden;
-     }
 }
