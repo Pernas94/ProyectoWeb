@@ -94,6 +94,12 @@ a, a:visited{
      font-size: 18px;
 }
 
+#logout-logo{
+     display:none;
+}
+
+
+
 .menu-sand{
      display:none;
      width:100%;
@@ -188,4 +194,49 @@ a, a:visited{
 }
 .redes i{
      padding: 0 20px 20px 0;
+}
+
+
+
+
+
+/*LOGIN*/
+.login-container{
+     display:none;
+     z-index: 1000;
+     width:auto;
+     height:auto;
+     min-width: 200px;
+     background-color: #FCEADE;
+     box-shadow: -1px 1px 3px grey;
+     position:absolute;
+     right:10px;
+     top:77px;
+     text-align: center;
+     padding: 10px 20px;
+}
+
+
+
+.login-container td{
+     padding: 0 10px 15px 0;
+}
+
+.login-button{
+
+     border:none;
+     border-radius: 20px;
+     color:white;
+     background-color: #EA526F;
+     padding: 10px;
+     box-shadow: 1px 1px 2px lightgrey;
+}
+
+.login-button:hover{
+     position:relative;
+     top:1px;
+}
+
+.login-button:active{
+     top:2px;
 }

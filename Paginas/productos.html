@@ -27,13 +27,12 @@
                          <div>Inicio</div>
                     </a>
                     <div class="dropdown nav-link" style="border-bottom: 2px solid #EA526F;">
-                         <a href=".\productos.html" style="color:#EA526F;">Productos</a>
+                         <a href="productos.html" onclick="menuProductos('bloque-decoracion')" style="color:#EA526F;">Productos</a>
                          <div class="dropdown-content">
-                              <a href="#">Decoración</a>
-                              <a href="#">Complementos</a>
-                              <a href="">Aromas</a>
-                              <a href="">Espiritualidad</a>
-                              <a href="#">Moda</a>
+                              <a href="#" onclick="menuProductos('bloque-decoracion')">Decoración</a>
+                              <a href="#" onclick="menuProductos('bloque-complementos')">Complementos</a>
+                              <a href="#" onclick="menuProductos('bloque-aromas')">Aromas</a>
+                              <a href="#" onclick="menuProductos('bloque-espiritualidad')">Espiritualidad</a>
                          </div>
                     </div>
                     <div class="dropdown nav-link">
@@ -74,92 +73,237 @@
                </div>
 
                <div class="menu-lateral">
-                    <a href=""><p>Decoración</p></a>
-                    <a href=""><p>Complementos</p></a>
-                    <a href=""><p>Aromas</p></a>
-                    <a href=""><p>Espiritualidad</p></a>
-                    <a href=""><p>Moda</p></a>
+                    <a href="#" onclick="menuProductos('bloque-decoracion')">
+                         <p>Decoración</p>
+                    </a>
+                    <a href="#" onclick="menuProductos('bloque-complementos')">
+                         <p>Complementos</p>
+                    </a>
+                    <a href="#" onclick="menuProductos('bloque-aromas')">
+                         <p>Aromas</p>
+                    </a>
+                    <a href="#" onclick="menuProductos('bloque-espiritualidad')">
+                         <p>Espiritualidad</p>
+                    </a>
                </div>
 
                <div class="contenido-central-prod">
 
-                    <div class="producto-titulo">
-                         <h1> Decoración </h1>
-                         <div class="producto-secciones" style="position:sticky;top:0;">
-                              <a href="">Figuras</a>
-                              <a href="">Tapices</a>
-                              <a href="">Baúles</a>
-                              <a href="">Otros</a>
+                    <div class="bloque" id="bloque-decoracion">
+                         <div class="producto-titulo">
+                              <h1> Decoración </h1>
+                              <div class="producto-secciones">
+                                   <a href="#figuras">Figuras</a>
+                                   <a href="#cuencos">Cuencos</a>
+                                   <a href="#candiles">Candiles</a>
+                                   <a href="#cajas">Cajas</a>
+                              </div>
                          </div>
+
+                         <div class="producto-bloque">
+                              <h2 id="figuras">Figuras</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\figuras1.jpg" alt="Figura de Ganesha">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\figuras2.jpg" alt="Figura de Siddharta Gautama (Buddha)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\figuras3.jpg" alt="Figura de Ganesha danzando">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\figuras4.jpg" alt="Figura de postura de yoga">
+                              </div>
+                         </div>
+
+                         <div class="producto-bloque">
+                              <h2 id="cuencos">Cuencos</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\cuencos1.jpg" alt="Cuencos de madera y resina">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\cuencos2.jpg" alt="Cuencos de madera decorativos">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\cuencos3.jpg" alt="Cuencos de porcelana artesanal">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\cuencos4.jpg" alt="Cuencos de granito">
+                              </div>
+                         </div>
+
+
+
+                         <div class="producto-bloque">
+                              <h2 id="candiles">Candiles</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\candil1.jpg" alt="Candiles decorativos de metal">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\candil2.jpg" alt="Candiles de madera y metal">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\candil3.jpg" alt="Candiles arabescos">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\candil4.jpg" alt="Candil de meditación de madera">
+                              </div>
+                         </div>
+
+                         <div class="producto-bloque">
+                              <h2 id="cajas">Cajas</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\caja1.jpg" alt="Baúl de madera">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\caja3.jpg" alt="Caja de mano de buddha">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\caja4.jpg" alt="Caja decorativa del árbol de la vida">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\caja6.jpg" alt="Caja hexagonal asiática">
+                              </div>
+                         </div>
+
+
+
                     </div>
 
-                    <div class="producto-bloque">
-                         <h2>Figuras</h2>
-                         <div class="contenedor-productos">
-
-                              <img class="ImgThumbnail" src="..\Imagenes\Productos\copia.jpg" alt="Ganesha">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="Magenta">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
 
 
-                         </div>
-                         <div class="contenedor-productos">
-
-                              <img class="ImgThumbnail" src="..\Imagenes\Productos\copia.jpg" alt="Ganesha">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="Magenta">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-
-
+                    <div class="bloque" id="bloque-complementos">
+                         <div class="producto-titulo">
+                              <h1> Complementos </h1>
+                              <div class="producto-secciones">
+                                   <a href="#conjuntos">Conjuntos</a>
+                                   <a href="#colgantes">Pulseras</a>
+                                   <a href="#pulseras">Colgantes</a>
+                                   <a href="#bolsos">Bolsos</a>
+                              </div>
                          </div>
 
-                         <div class="modal">
-                              <span class="close">×</span>
-                              <img class=" modalImage" id="img01" />
+                         <div class="producto-bloque">
+                              <h2 id="conjuntos">Conjuntos</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\conjunto1.jpg" alt="Conjunto de collar, pendientes y pulsera dorado metálico">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\conjunto2.jpg" alt="Conjunto de collar, pendientes y pulsera plateada y con incrustaciones de piedras azules">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\conjunto3.jpg" alt="Conjunto de collar, pendientes y anillo plateado con incrustaciones de piedras rojizas">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\conjunto4.jpg" alt="Conjunto de collar, pendientes, anillo y pulseras con piedras de tonos apagados">
+                              </div>
                          </div>
+
+
+                         <div class="producto-bloque">
+                              <h2 id="pulseras">Pulseras</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\pulsera1.jpg" alt="Pulsera ancha plateada">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\pulsera2.jpg" alt="Pulsera de cuero rojo y detalles en plata">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\pulsera3.jpg" alt="Pulsera de cuentas de piedra y símbolo del Ohm">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\pulsera4.jpg" alt="Pulseras de cuero rojo/celeste con detalles en dorado">
+                              </div>
+                         </div>
+
+
+
+                         <div class="producto-bloque">
+                              <h2 id="colgantes">Colgantes</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\colgante1.jpg" alt="Colgante de libélula (metal y piedra)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\colgante2.jpg" alt="Colgante del árbol de la vida (metal y cuero)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\colgante3.jpg" alt="Colgante de escarabajo (metal, cuero y piedra)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\colgante4.jpg" alt="Colgante de piedra y metal bañado en oro">
+
+
+                              </div>
+
+                         </div>
+
+
+
+                         <div class="producto-bloque">
+                              <h2 id="bolsos">Bolsos</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\bolso1.jpg" alt="Bolso y cartera de cuero gamuzado turquesa">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\bolso4.jpg" alt="Bolso y cartera de cuero gamuzado azul">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\bolso3.jpg" alt="Bolso, cartera y tarjetero de cuero marrón de hombre">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\bolso2.jpg" alt="Bolso y cartera de cuero marrón de hombre">
+                              </div>
+                         </div>
+
+
                     </div>
 
 
 
 
-                    <div class="producto-bloque">
-                         <h2>Tapices</h2>
-                         <div class="contenedor-productos">
-
-                              <img class="ImgThumbnail" src="..\Imagenes\Productos\copia.jpg" alt="Ganesha">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="Magenta">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-
-
-                         </div>
-                         <div class="contenedor-productos">
-
-                              <img class="ImgThumbnail" src="..\Imagenes\Productos\copia.jpg" alt="Ganesha">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="Magenta">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-                              <img class="ImgThumbnail" src="..\Imagenes\LogoMagenta.png" alt="">
-
-
+                    <div class="bloque" id="bloque-aromas">
+                         <div class="producto-titulo">
+                              <h1> Aromas</h1>
+                              <div class="producto-secciones">
+                                   <a href="#inciensos">Inciensos</a>
+                                   <a href="#velas">Velas</a>
+                              </div>
                          </div>
 
-                         <div class="modal">
-                              <span class="close">×</span>
-                              <img class=" modalImage" id="img01" />
+                         <div class="producto-bloque">
+                              <h2 id="inciensos">Inciensos</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\incienso1.jpg" alt="Inciensos Tales of Indoa">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\incienso2.jpg" alt="Inciensos Reiki Goloka">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\incienso3.jpg" alt="Inciensos NAG (Richness of Nature)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\incienso4.jpg" alt="Inciensos Spiritual">
+                              </div>
                          </div>
+
+
+                         <div class="producto-bloque">
+                              <h2 id="velas">Velas</h2>
+                              <div class="contenedor-productos">
+
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\vela1.jpg" alt="Velas variadas de Cerabella">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\vela2.jpg" alt="Velas variadas de Cerabella">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\vela3.jpg" alt="Velas de miel de la buena fortuna">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\vela4.jpg" alt="Mikados variados de Cerabella">
+                              </div>
+                         </div>
+
                     </div>
+
+
+
+                    <div class="bloque" id="bloque-espiritualidad">
+                         <div class="producto-titulo">
+                              <h1> Espiritualidad</h1>
+                              <div class="producto-secciones">
+                                   <a href="#tibetanos">Cuencos tibetanos</a>
+                                   <a href="#fengshui">Feng-Shui</a>
+                              </div>
+                         </div>
+
+                         <div class="producto-bloque">
+                              <h2 id="tibetanos">Cuencos tibetanos</h2>
+                              <div class="contenedor-productos">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\tibetano1.jpg" alt="Cuenco tibetano grandes">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\tibetano2.jpg" alt="Cuenco tibetano mediano">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\tibetano3.jpg" alt="Cuenco tibetano pequeño">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\tibetano4.jpg" alt="Cuenco tibetano decorativo pequeño">
+
+                              </div>
+                         </div>
+
+                         <div class="producto-bloque">
+                              <h2 id="fengshui">Feng-Shui</h2>
+                              <div class="contenedor-productos">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\fengshui1.jpg" alt="Orgonitas (pirámide y botón)">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\fengshui3.jpg" alt="Gong tibetano">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\fengshui4.jpg" alt="Quemador de salvia y palosanto">
+                                   <img class="ImgThumbnail" src="..\Imagenes\Productos\fengshui5.jpg" alt="Bola y medallas de Feng-Shui">
+
+                              </div>
+                         </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="modal">
+                         <span class="close">×</span>
+                         <img class=" modalImage" id="img01" />
+                    </div>
+
                </div>
           </div>
-
-
-
-
-
-
-
-
-
 
 
 

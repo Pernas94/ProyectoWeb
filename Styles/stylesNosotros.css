@@ -1,6 +1,6 @@
-.nosotros {
+.nosotros, .historia, .filosofia {
      display: flex;
-
+     margin-top: 50px;
 }
 
 .contenido-central {
@@ -8,24 +8,36 @@
 }
 
 .nosotrosImg {
-     width: 40%;
-     height:400px;
-     overflow-y: hidden;
+     width: 45%;
 
 }
 
 .nosotrosImg img {
      width: 100%;
      border-radius: 200px;
-     object-fit:fill;
 }
 
-.nosotrosInfo {
-     width: 60%;
+.info {
+     width: 55%;
+     margin: auto 0;
 
 }
-.nosotrosInfo p{
+.info2{
+     width:70%;
+     margin:auto 0;
+}
+.info p{
      top:50%;
+}
+
+.filosofiaImg, .historiaImg{
+     width:30%;
+
+}
+.filosofiaImg img, .historiaImg img{
+     width:100%;
+     border-radius: 100px;
+     margin:auto 10px auto 10px;
 }
 
 h1, h3 {

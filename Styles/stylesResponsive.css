@@ -91,6 +91,12 @@
      .producto-bloque{
           text-align: center;
      }
+     .nosotros, .historia,.filosofia{
+          display:block !important;
+     }
+     .nosotrosImg, .historiaImg,.filosofiaImg, .info, .info2{
+          width:100% !important;
+     }
 
 
 }
