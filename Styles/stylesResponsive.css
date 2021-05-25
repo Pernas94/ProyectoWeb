@@ -35,9 +35,22 @@
      .separador-marca{
           display:block;
      }
+
+     .texto-interior{
+          height: 90%;
+          width:50%;
+          right:0;
+          padding: 15px 10px 10px 10px;
+     }
+     .texto-interior div{
+          margin: auto 0 auto 0;
+     }
 }
 
 @media screen and (max-width:750px){
+     p{
+          text-align: justify;
+     }
 
      .nav-bar{
           position:sticky;
@@ -91,12 +104,33 @@
      .producto-bloque{
           text-align: center;
      }
-     .nosotros, .historia,.filosofia{
+     .historia,.filosofia{
           display:block !important;
      }
-     .nosotrosImg, .historiaImg,.filosofiaImg, .info, .info2{
+     .historiaImg,.filosofiaImg, .info{
           width:100% !important;
+          margin:0;
+     }
+     .info, .texto-interior{
+          text-align: justify;
+     }
+     .texto-interior{
+          position:static;
+          width:70%;
+          opacity:1;
+          margin: 0 auto;
+          padding:0;
      }
 
+     .filosofiaImg{
+          display:none;
+     }
 
+     .display-productos{
+          display:block!important;
+     }
+
+     .imgPrincipal{
+          margin: 20px 0 0 0;
+     }
 }

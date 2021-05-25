@@ -109,6 +109,7 @@ a, a:visited{
      padding:0;
      line-height: 3em;
      box-shadow: 1px 1px 3px grey;
+     z-index: 100;
 }
 
 .dropdown {

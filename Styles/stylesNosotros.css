@@ -1,46 +1,84 @@
-.nosotros, .historia, .filosofia {
-     display: flex;
-     margin-top: 50px;
-}
 
 .contenido-central {
-     padding:10% 0 10% 0!important;
-}
-
-.nosotrosImg {
-     width: 45%;
+     padding:70px 0 10% 0!important;
 
 }
 
-.nosotrosImg img {
-     width: 100%;
-     border-radius: 200px;
+
+.historia, .filosofia {
+     display: flex;
+     margin-top: 50px;
+
 }
+
+
+
 
 .info {
      width: 55%;
      margin: auto 0;
 
 }
-.info2{
-     width:70%;
-     margin:auto 0;
-}
+
 .info p{
      top:50%;
 }
 
 .filosofiaImg, .historiaImg{
-     width:30%;
-
+     width:45%;
+     margin-top: 70px;
 }
 .filosofiaImg img, .historiaImg img{
      width:100%;
-     border-radius: 100px;
-     margin:auto 10px auto 10px;
+     box-shadow: 1px 1px 5px grey;
+     vertical-align: middle;
+}
+
+.historiaImg{
+     margin-left: 20px;
+}
+
+.filosofiaImg{
+     margin-right: 20px;
 }
 
 h1, h3 {
      text-decoration: underline;
      text-decoration-color: #EA526F;
+}
+
+
+
+
+
+
+
+
+
+/**/
+
+
+
+.imgPrincipal{
+     width:100%;
+     margin: 100px 0 50px 0;
+     position:relative;
+
+}
+
+
+.imgPrincipal img{
+     width:100%;
+     box-shadow: 1px 1px 5px grey;
+}
+
+.texto-interior{
+     width:101%;
+     position:absolute;
+     bottom:30px;
+     background-color: white;
+     opacity:0.9;
+     padding:20px 30% 20px 30%;
+
+
 }
