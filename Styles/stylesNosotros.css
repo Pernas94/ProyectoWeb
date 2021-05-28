@@ -193,3 +193,13 @@ h1, h3 {
      border-radius: 10px;
      cursor: pointer;
 }
+
+.diagrama{
+     width: 900px;
+}
+
+.diagrama img{
+     width:100%;
+     margin-bottom: 200px;
+     box-shadow: 1px 1px 5px grey;
+}

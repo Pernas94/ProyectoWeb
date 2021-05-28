@@ -15,9 +15,9 @@
      <!--PALETTE- https://coolors.co/3a2d32-ffffff-fceade-f76f8e-ea526f-->
 </head>
 
-<body>
+<body onload="controlarUsuarios()">
      <div class="contenedorTotal">
-          <nav class="nav-bar">
+          <nav class="nav-bar" id="menuCambio">
                <a class="boton-sand" href="#" onclick="mostrarMenu()"><i class="fas fa-bars"></i></a>
                <a class="logo-nav" href="..\index.html"><img src="..\Imagenes\LogoMagenta.png" alt="Logo Magenta Benalmádena"></a>
 
@@ -50,10 +50,33 @@
                     </a>
                </div>
 
-               <a class="sesion-nav" href=""><i class="fas fa-sign-in-alt"></i></a>
+               <a class="sesion-nav" id="login-logo" href="#" onclick="mostrarMenuLogin()"><i class="fas fa-sign-in-alt"></i></a>
+               <a class="sesion-nav" id="logout-logo" href="#" onclick="cerrarSesion()"><i class="fas fa-sign-out-alt"></i></a>
           </nav>
 
           <div class="contenedor-inicio">
+
+               <div id="login-container"class="login-container">
+                    <h3><b>Inicio de sesión</b></h3>
+                    <form action="" name="InicioSesion" onsubmit="leerXML()">
+                         <table>
+                              <tr>
+                                   <td><label for="Usuario">Usuario</label></td>
+                                   <td><input type="text" name="Usuario" value=""></td>
+                              </tr>
+
+                              <tr>
+                                   <td><label for="Contraseña">Contraseña</label></td>
+                                   <td><input type="password" name="Contraseña" value=""></td>
+                              </tr>
+                              <tr>
+                                   <td></td>
+                                   <td><input class="login-button" type="submit" value="Conectar"></td>
+                              </tr>
+                         </table>
+                    </form >
+               </div>
+
                <div class="menu-sand" id="menu-sand">
                     <div>
                          <a class="nav-link" href="..\index.html" style="border-bottom: 2px solid #EA526F;">
@@ -125,12 +148,15 @@
                          <a href="dolly.html">EXTRAS</a>
                     </div>
 
-
+                    <button class="boton-extras" onclick="cambiarColor()">Cambio CSS</button>
+                    <p>El botón de "cambiar CSS" solo cambia el color de fondo del menú y el footer. <br>
+                         Lo hace solo una vez.
+                    </p>
 
                </div>
           </div>
 
-          <footer class="footer">
+          <footer class="footer" id="footerCambio">
                <div>
                     <a href="..\index.html"><img src="..\Imagenes\LogoMagenta.png" alt="Logo Magenta Benalmádena"></a>
                </div>

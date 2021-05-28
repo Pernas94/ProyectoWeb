@@ -65,12 +65,12 @@ function validarUsuario(xml) {
      if (existe == true) {
           sessionStorage.setItem("nomUser", document.forms["InicioSesion"]["Usuario"].value);
           var logout = document.getElementById("logout-logo");
-          var login=document.getElementById("login-logo");
-          login.style.display="none";
-          logout.style.display="block";
+          var login = document.getElementById("login-logo");
+          login.style.display = "none";
+          logout.style.display = "block";
 
-          var loginbox= document.getElementById("login-container");
-          loginbox.style.display="none";
+          var loginbox = document.getElementById("login-container");
+          loginbox.style.display = "none";
 
      } else {
           sessionStorage.removeItem("nomUser");
@@ -80,36 +80,47 @@ function validarUsuario(xml) {
 
 
 
-function controlarUsuarios(){
-     if(sessionStorage.getItem("nomUser")!=null){
+function controlarUsuarios() {
+     if (sessionStorage.getItem("nomUser") != null) {
           var logout = document.getElementById("logout-logo");
-          var login=document.getElementById("login-logo");
-          login.style.display="none";
-          logout.style.display="block";
+          var login = document.getElementById("login-logo");
+          login.style.display = "none";
+          logout.style.display = "block";
      }
 }
 
 
-function cerrarSesion(){
+function cerrarSesion() {
      sessionStorage.removeItem("nomUser");
      var logout = document.getElementById("logout-logo");
-     var login=document.getElementById("login-logo");
-     logout.style.display="none";
-     login.style.display="block";
+     var login = document.getElementById("login-logo");
+     logout.style.display = "none";
+     login.style.display = "block";
 
 }
 
 
 
-function menuProductos(seleccion){
-     var todosDivs=document.getElementsByClassName("bloque");
+function menuProductos(seleccion) {
+     var todosDivs = document.getElementsByClassName("bloque");
 
-     for (var i = 0; i < todosDivs.length; i++){
-               todosDivs[i].style.display="none";
+     for (var i = 0; i < todosDivs.length; i++) {
+          todosDivs[i].style.display = "none";
      }
 
-     var x=document.getElementById(seleccion);
-     x.style.display="block";
+     var x = document.getElementById(seleccion);
+     x.style.display = "block";
 
+
+}
+
+
+
+function cambiarColor() {
+     var menu = document.getElementById("menuCambio");
+     var footer = document.getElementById("footerCambio");
+
+     menu.style.backgroundColor="lightblue";
+     footer.style.backgroundColor="lightblue";
 
 }
